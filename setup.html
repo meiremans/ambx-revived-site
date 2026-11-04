@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'">
+<title>Set up your kit: amBX Revived</title>
+<meta name="description" content="How to connect a Philips amBX kit to Windows 11 using the WinUSB driver included with Windows.">
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" width="30" height="30" alt="">amBX Revived</a>
+    <nav aria-label="Main">
+      <a href="/setup" aria-current="page">Setup</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="narrow page">
+  <h1>Set up your amBX kit</h1>
+  <p class="lead">Windows doesn't choose a driver for the amBX controller by itself, so you need to do this once. It uses the WinUSB driver that comes with Windows, and you don't need to download anything.</p>
+  <p>You need an administrator account on the PC.</p>
+
+  <ol class="steps">
+    <li>Connect the amBX controller by USB and power it on.</li>
+    <li>Right-click <strong>Start</strong> and open <strong>Device Manager</strong>.</li>
+    <li>Find <strong>amBX (TM) device controller</strong>. It may be under <strong>Other devices</strong> with a warning icon.</li>
+    <li>Right-click it and choose <strong>Update driver</strong>.</li>
+    <li>Choose <strong>Browse my computer for drivers</strong>.</li>
+    <li>Choose <strong>Let me pick from a list of available drivers on my computer</strong>.</li>
+    <li>Choose <strong>Universal Serial Bus devices</strong>, then <strong>Next</strong>.</li>
+    <li>Under <strong>Manufacturer</strong>, choose <strong>WinUsb Device</strong>. Under <strong>Model</strong>, choose <strong>WinUsb Device</strong>, then <strong>Next</strong>.</li>
+    <li>If Windows warns that the driver may not be compatible, choose <strong>Yes</strong>.</li>
+    <li>Open amBX Revived and choose <strong>Check again</strong>.</li>
+  </ol>
+
+  <h2>If the app still can't open the controller</h2>
+  <p>Close any other app that uses the kit, including older copies of this app in the notification area. Then choose <strong>Check again</strong>.</p>
+  <p>If it's still not working, check that Device Manager shows the kit as <strong>WinUsb Device</strong>, or <a href="mailto:nick@ab-it.io">contact us</a>.</p>
+
+  <h2>To undo this</h2>
+  <p>In Device Manager, right-click the device, choose <strong>Uninstall device</strong>, and unplug the controller.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="/privacy">Privacy policy</a>
+      <a href="mailto:nick@ab-it.io">Contact</a>
+    </nav>
+    <p>amBX Revived is an independent app. It is not made or endorsed by Philips or amBX. Philips and amBX are trademarks of their respective owners.</p>
+  </div>
+</footer>
+</body>
+</html>
